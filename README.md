@@ -10,8 +10,7 @@ Sepsis is a critical medical condition that requires prompt diagnosis and interv
 
 2. Assets Folder:
 
-* The Assets folder often holds external files or resources that are used by the application.
-* In a machine learning context, this folder might store pre-trained models, data files, or any other assets required for the application to function.
+* The Assets folder has the pre-trained model, data files, or any other assets required for the application to function.
 
 3. Dockerfile:
 
@@ -39,6 +38,30 @@ Activate the Python's virtual environment so that the Python kernel & libraries 
 Upgrade Pip, the installed libraries/packages manager to have the up-to-date version that will work correctly;
 Install the required libraries/packages listed in the requirements.txt file so that it will be allow to import them into the python's scripts and notebooks without any issue.
 NB: For MacOs users, please install Xcode if you have an issue.
+
+## Exploratory Data Analysis
+
+The analysis is done in this file(Analysis)[Sepsis_Prediction.ipynb]
+
+### What the Distribution of Sepsis
+
+![](Assets/Images/distribution.png)
+
+There are 391 negative cases which are the patients who did not develop sepsis during their stay in the intensive Care Unit(ICU). The positive cases are 208, which are the patients who developed sepsis during their stay in the ICU. The larger proportion of the patients did not develop sepsis, whole a smaller proportion did develop sepsis.
+
+### What the distribution of age for Patients with Sepsis
+
+![](Assets/Images/agedistribution.png)
+
+From the histogram, the age group from 20-30 years has the highest number of patients, with more than 300 individuals.This suggests that majority of the patients are relatively young, followed by a gradual decline in the number of patients in older age groups.The age range is widely distributed, including both young and elderly individuals.
+The mean age of patients in the dataset is approximatel 33.29 years. The median age is 29.0 years, which suggests that half of the a patients are below 29 years old and half are above 29 years old. The youngest patient is 21 years and the oldest patient is 81 years old.
+
+### How many Patients Have Insurance
+
+![](Assets/Images/insurance.png)
+
+The larger portion of the pie chart is dedicated to patients with insurance, represented as "Insurance: 1."
+The percentage value (68.6%) next to this segment indicates that approximately 68.6% of the patients in the dataset have insurance while 31.4% of the patients do not have insurance.
 
 
 ## FastAPI:
